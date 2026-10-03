@@ -20,7 +20,9 @@
   i18n.defaultLocale = "en_US.UTF-8";
 
   boot.loader = {
-    systemd-boot.enable = true;
+    systemd-boot.enable = false;
+	grub.enable = false;
+	refind.enable = true;
     efi.canTouchEfiVariables = true;
     timeout = 25;
   };
