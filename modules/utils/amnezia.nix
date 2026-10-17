@@ -1,8 +1,8 @@
-{ pkgs, configs, ...}:
 {
-
-environment.systemPackages = with pkgs; [
-	amneziawg-go
-	amneziawg-tools
-];
+  nixos.base = { pkgs, ... }: {
+    environment.systemPackages = with pkgs; [
+      amneziawg-go
+      amneziawg-tools
+    ];
+  };
 }

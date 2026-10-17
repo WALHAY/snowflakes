@@ -1,6 +1,6 @@
-{ pkgs, ... }:
 {
-  environment.systemPackages = with pkgs; [
-    blueman
-  ];
+  nixos.desktop = {
+    hardware.bluetooth.enable = true;
+    services.blueman.enable = true;
+  };
 }
