@@ -18,7 +18,6 @@
       yandex-music
       fastfetch
       postman
-      beekeeper-studio
     ];
   };
 }
