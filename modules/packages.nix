@@ -9,15 +9,22 @@
     ];
   };
 
-  homeManager.walhay = { pkgs, ... }: {
+  homeManager.walhay = { inputs, pkgs, ... }: {
+    imports = [
+      inputs.noctalia.homeModules.default
+    ];
+
     home.packages = with pkgs; [
       firefox
       telegram-desktop
       chezmoi
-      noctalia-shell
       yandex-music
       fastfetch
       postman
     ];
+
+    programs.noctalia = {
+      enable = true;
+    };
   };
 }
