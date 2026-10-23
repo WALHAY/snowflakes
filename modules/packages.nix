@@ -21,6 +21,7 @@
       yandex-music
       fastfetch
       postman
+      codex
     ];
 
     programs.noctalia = {
