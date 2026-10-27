@@ -6,6 +6,8 @@
   };
 
   homeManager.walhay = {
+    programs.nix-your-shell.enable = true;
+
     programs.zsh = {
       enable = true;
       enableCompletion = true;
